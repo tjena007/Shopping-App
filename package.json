@@ -1,0 +1,24 @@
+{
+  "name": "shopping-app",
+  "version": "1.0.0",
+  "description": "e-commerce website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjena007/Shopping-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tjena007/Shopping-App/issues"
+  },
+  "homepage": "https://github.com/tjena007/Shopping-App#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "owl.carousel": "^2.3.4"
+  }
+}
