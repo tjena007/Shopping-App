@@ -74,6 +74,8 @@ body{
 }
 .foot h5{
     font-weight:100;
+    height: 60px;
+    color: black;
     
 }
 .foot{
@@ -329,5 +331,17 @@ body{
 #main-footer .last-text{
     color:black;
     font-weight:600;
+}
+.swiper-container {
+    width: 600px;
+    height: 800px;
+}
+
+.swiper-slide {
+    /* background: black; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
