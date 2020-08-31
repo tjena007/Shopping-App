@@ -1,0 +1,27 @@
+<%- include('../views/partials/header')%>
+
+<div style="margin-top: 200px; background: grey;">
+    <div class="row">
+
+        <div class="col-lg-12">
+
+            <% prods.forEach(function(prod){ %>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="<%= prod.image %>" alt="" class="img-fluid card-img-top" />
+                    <div class="card-body">
+                        <h4 class="card-text"><%= prod.name %></h4>
+                        <h4 class="card-text">Rs <%= prod.price %></h4>
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+
+
+
+        </div>
+
+    </div>
+
+
+    <%- include('../views/partials/footer')%>
