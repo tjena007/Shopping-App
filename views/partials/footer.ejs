@@ -13,30 +13,38 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="/scripts/main.js"></script>
 <script type="text/javascript">
-    var mySwiper = new Swiper('.swiper-container', {
-        // Optional parameters
-        loop: true,
-
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
+     var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+      },
+      loop:true,
+      breakpoints: {
+        '@0.00': {
+          slidesPerView: 2,
+          spaceBetween: 10,
         },
-        autoplay: {
-            delay: 1500,
-            disableOnInteraction: false,
+        '@0.85': {
+          slidesPerView: 2,
+          spaceBetween: 10,
         },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+       '@1.00': {
+          slidesPerView: 3,
+          spaceBetween: 10,
         },
-
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
+        '@1.50': {
+          slidesPerView: 4,
+          spaceBetween: 10,
         },
-    })
+        '@1.90': {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      }
+      
+    });
 
 
     $(window).scroll(function () {
