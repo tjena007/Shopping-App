@@ -5,11 +5,15 @@ var express = require('express'),
 	Product = require('./models/product'),
 	seedDB = require('./seed');
 
+var authRoutes = require('./routes/index');
+
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 mongoose.connect('mongodb://localhost:27017/shoppingproducts', { useNewUrlParser: true, useUnifiedTopology: true });
 seedDB();
+
+app.use(authRoutes);
 //console.log(products);
 app.get('/', function(req, res) {
 	res.render('home');
