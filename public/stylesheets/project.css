@@ -53,7 +53,7 @@ body{
     position:relative;
     bottom:710px;
 }
-.owl-carousel .owl-item{
+.swiper-wrapper .swiper-slide{
     padding-top:100px;
     overflow: hidden;
 }
@@ -61,15 +61,15 @@ body{
    overflow:hidden;
 }
 
-.owl-carousel .owl-item  img{
+.swiper-wrapper .swiper-slide  img{
   transform: scale(1);
   
   transition: transform 0.8s ease;
 }
-.owl-carousel .owl-item:hover  img{
+.swiper-wrapper .swiper-slide:hover  img{
     transform: scale(1.3);
 }
-.owl-carousel .owl-item{
+.swiper-wrapper .swiper-slide{
     color: black;
 }
 .foot h5{
@@ -92,7 +92,7 @@ body{
 }
 
 
-.owl-carousel .owl-item span.status{
+.swiper-wrapper .swiper-slide span.status{
     position: absolute;
     top: 10px;
     left: -1px;
@@ -332,16 +332,26 @@ body{
     color:black;
     font-weight:600;
 }
-.swiper-container {
-    width: 600px;
-    height: 800px;
+.swiper-container
+{
+    height:500px;
+    margin-top:100px;
+    margin:70px;
+    
+   
+}
+.swiper-slide
+{
+    background: #ccc;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:60px;
 }
 
-.swiper-slide {
-    /* background: black; */
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+@media screen and (max-width:790px) {
+      .swiper-container{
+          margin:30px;
+          margin-top:70px
+      }
+  }
