@@ -1,0 +1,12 @@
+<%- include('../views/partials/header')%>
+<h1>Show Page</h1>
+
+<div class="card">
+    <img src="<%= prod.image %>" alt="" style="height: 70vh;" class="img-fluid card-img-top" />
+    <div class="card-body">
+        <h4 class="card-text"><%= prod.name %></h4>
+        <h4 class="card-text">Rs <%= prod.price %></h4>
+    
+    </div>
+</div>
+<%- include('../views/partials/footer')%>
